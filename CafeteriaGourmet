@@ -1,66 +1,235 @@
+ESTRUTURA DO PROJETO
+cafeteria-gourmet/
+├── index.html
+├── about.html
+├── menu.html
+├── contact.html
+├── styles.css
+├── script.js
+├── server.js
+└── products.json
+HTML Pagina inicial:
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café Store - Sua loja de cafés especiais!</title>
+    <title>Cafeteria Gourmet</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Café Store</h1>
+        <h1>Cafeteria Gourmet</h1>
         <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Café</a></li>
-                <li><a href="#">Cafeteiras</a></li>
-                <li><a href="#">Acessórios</a></li>
-                <li><a href="#">Promoções</a></li>
-                <li><a href="#">Minha Conta</a></li>
-            </ul>
+            <a href="index.html">Início</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">Sobre Nós</a>
+            <a href="contact.html">Contato</a>
         </nav>
-        <div class="cart">
-            <a href="#">Minha Sacola (0)</a>
-        </div>
     </header>
-
     <main>
-        <section class="featured-products">
-            <h2>Em Destaque</h2>
-            <div class="product-card">
-                <img src="cafe1.jpg" alt="Café Le Pool">
-                <h3>Café Le Pool</h3>
-                <p>R$ 52,00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="product-card">
-                <img src="cafe2.jpg" alt="Café Black Tucano">
-                <h3>Café Black Tucano</h3>
-                <p>R$ 51,50</p>
-                <button>Comprar</button>
-            </div>
-            <!-- Adicione mais produtos conforme necessário -->
-        </section>
-
-        <section class="categories">
-            <h2>Categorias</h2>
-            <div class="category">
-                <h3>Café em Grãos</h3>
-            </div>
-            <div class="category">
-                <h3>Cafeteiras e Métodos</h3>
-            </div>
-            <div class="category">
-                <h3>Moedores</h3>
-            </div>
-            <!-- Adicione mais categorias conforme necessário -->
+        <section>
+            <h2>Bem-vindo à nossa Cafeteria Gourmet!</h2>
+            <p>Descubra os melhores cafés e delícias que preparamos para você.</p>
         </section>
     </main>
-
     <footer>
-        <p>&copy; 2024 Café Store. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Cafeteria Gourmet. Todos os direitos reservados.</p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - Cafeteria Gourmet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cafeteria Gourmet</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">Sobre Nós</a>
+            <a href="contact.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Sobre Nós</h2>
+            <p>Na Cafeteria Gourmet, oferecemos uma seleção de cafés especiais e produtos artesanais feitos com paixão.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cafeteria Gourmet. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Cafeteria Gourmet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cafeteria Gourmet</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">Sobre Nós</a>
+            <a href="contact.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Menu</h2>
+            <div id="product-list"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cafeteria Gourmet. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Cafeteria Gourmet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cafeteria Gourmet</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">Sobre Nós</a>
+            <a href="contact.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Contato</h2>
+            <p>Entre em contato conosco pelo email: contato@cafeteriagourmet.com</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cafeteria Gourmet. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+STYLESS.css (estilo):
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6f4c3e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #6f4c3e;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+Script.js (Logica Front-end):
+async function loadProducts() {
+    const response = await fetch('/products.json');
+    const products = await response.json();
+    const productList = document.getElementById('product-list');
+
+    products.forEach(product => {
+        const productDiv = document.createElement('div');
+        productDiv.className = 'product';
+        productDiv.innerHTML = `
+            <h3>${product.name}</h3>
+            <p>R$ ${product.price.toFixed(2)}</p>
+        `;
+        productList.appendChild(productDiv);
+    });
+}
+
+window.onload = () => {
+    if (document.getElementById('product-list')) {
+        loadProducts();
+    }
+};
+Back-end:
+const express = require('express');
+const fs = require('fs');
+const app = express();
+const PORT = 3000;
+
+app.use(express.static('.'));
+
+app.get('/products.json', (req, res) => {
+    fs.readFile('products.json', (err, data) => {
+        if (err) {
+            res.status(500).send('Erro ao carregar produtos');
+            return;
+        }
+        res.setHeader('Content-Type', 'application/json');
+        res.send(data);
+    });
+});
+
+app.listen(PORT, () => {
+    console.log(`Servidor rodando em http://localhost:${PORT}`);
+});
+Dados do produto:
+[
+    {
+        "id": 1,
+        "name": "Café Gourmet Mocha",
+        "price": 29.90
+    },
+    {
+        "id": 2,
+        "name": "Café Gourmet Espresso",
+        "price": 24.90
+    },
+    {
+        "id": 3,
+        "name": "Café Gourmet Americano",
+        "price": 19.90
+    },
+    {
+        "id": 4,
+        "name": "Café Gourmet Arabica",
+        "price": 34.90
+    }
+]
